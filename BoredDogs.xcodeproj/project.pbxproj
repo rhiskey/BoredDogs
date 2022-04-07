@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5BB880BF27FF3FCC008A45FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880BE27FF3FCC008A45FE /* AppDelegate.swift */; };
 		5BB880C127FF3FCC008A45FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880C027FF3FCC008A45FE /* SceneDelegate.swift */; };
-		5BB880C327FF3FCC008A45FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880C227FF3FCC008A45FE /* ViewController.swift */; };
+		5BB880C327FF3FCC008A45FE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880C227FF3FCC008A45FE /* MainViewController.swift */; };
 		5BB880C627FF3FCC008A45FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB880C427FF3FCC008A45FE /* Main.storyboard */; };
 		5BB880C827FF3FCD008A45FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB880C727FF3FCD008A45FE /* Assets.xcassets */; };
 		5BB880CB27FF3FCD008A45FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB880C927FF3FCD008A45FE /* LaunchScreen.storyboard */; };
@@ -19,11 +19,12 @@
 		5BB880BB27FF3FCC008A45FE /* BoredDogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoredDogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB880BE27FF3FCC008A45FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB880C027FF3FCC008A45FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5BB880C227FF3FCC008A45FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BB880C227FF3FCC008A45FE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5BB880C527FF3FCC008A45FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BB880C727FF3FCD008A45FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BB880CA27FF3FCD008A45FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BB880CC27FF3FCD008A45FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB880D427FF405B008A45FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		5BB880B227FF3FCC008A45FE = {
 			isa = PBXGroup;
 			children = (
+				5BB880D427FF405B008A45FE /* README.md */,
 				5BB880BD27FF3FCC008A45FE /* BoredDogs */,
 				5BB880BC27FF3FCC008A45FE /* Products */,
 			);
@@ -56,15 +58,47 @@
 		5BB880BD27FF3FCC008A45FE /* BoredDogs */ = {
 			isa = PBXGroup;
 			children = (
-				5BB880BE27FF3FCC008A45FE /* AppDelegate.swift */,
-				5BB880C027FF3FCC008A45FE /* SceneDelegate.swift */,
-				5BB880C227FF3FCC008A45FE /* ViewController.swift */,
-				5BB880C427FF3FCC008A45FE /* Main.storyboard */,
-				5BB880C727FF3FCD008A45FE /* Assets.xcassets */,
-				5BB880C927FF3FCD008A45FE /* LaunchScreen.storyboard */,
-				5BB880CC27FF3FCD008A45FE /* Info.plist */,
+				5BB880D227FF4042008A45FE /* App */,
+				5BB880D327FF404A008A45FE /* ViewControllers */,
+				5BB880D527FF407A008A45FE /* Storyboards */,
+				5BB880D627FF4082008A45FE /* Resourses */,
 			);
 			path = BoredDogs;
+			sourceTree = "<group>";
+		};
+		5BB880D227FF4042008A45FE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5BB880CC27FF3FCD008A45FE /* Info.plist */,
+				5BB880BE27FF3FCC008A45FE /* AppDelegate.swift */,
+				5BB880C027FF3FCC008A45FE /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5BB880D327FF404A008A45FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BB880C227FF3FCC008A45FE /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5BB880D527FF407A008A45FE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5BB880C427FF3FCC008A45FE /* Main.storyboard */,
+				5BB880C927FF3FCD008A45FE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5BB880D627FF4082008A45FE /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				5BB880C727FF3FCD008A45FE /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BB880C327FF3FCC008A45FE /* ViewController.swift in Sources */,
+				5BB880C327FF3FCC008A45FE /* MainViewController.swift in Sources */,
 				5BB880BF27FF3FCC008A45FE /* AppDelegate.swift in Sources */,
 				5BB880C127FF3FCC008A45FE /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BoredDogs/Info.plist;
+				INFOPLIST_FILE = BoredDogs/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BoredDogs/Info.plist;
+				INFOPLIST_FILE = BoredDogs/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
