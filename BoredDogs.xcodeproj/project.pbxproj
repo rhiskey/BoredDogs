@@ -13,6 +13,12 @@
 		5BB880C627FF3FCC008A45FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB880C427FF3FCC008A45FE /* Main.storyboard */; };
 		5BB880C827FF3FCD008A45FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB880C727FF3FCD008A45FE /* Assets.xcassets */; };
 		5BB880CB27FF3FCD008A45FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB880C927FF3FCD008A45FE /* LaunchScreen.storyboard */; };
+		5BB880D8280029C8008A45FE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880D7280029C8008A45FE /* Activity.swift */; };
+		5BB880DB28002A3D008A45FE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880DA28002A3D008A45FE /* Dog.swift */; };
+		5BB880DD28002BBD008A45FE /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880DC28002BBD008A45FE /* UserActionCell.swift */; };
+		5BB880DF28002C86008A45FE /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880DE28002C86008A45FE /* ActivitiesTableViewController.swift */; };
+		5BB880E128002D9A008A45FE /* BoredDogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880E028002D9A008A45FE /* BoredDogsViewController.swift */; };
+		5BB880E428002E02008A45FE /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880E328002E02008A45FE /* ActivityCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,12 @@
 		5BB880CA27FF3FCD008A45FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BB880CC27FF3FCD008A45FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BB880D427FF405B008A45FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5BB880D7280029C8008A45FE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		5BB880DA28002A3D008A45FE /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		5BB880DC28002BBD008A45FE /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
+		5BB880DE28002C86008A45FE /* ActivitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewController.swift; sourceTree = "<group>"; };
+		5BB880E028002D9A008A45FE /* BoredDogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredDogsViewController.swift; sourceTree = "<group>"; };
+		5BB880E328002E02008A45FE /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,8 @@
 				5BB880D327FF404A008A45FE /* ViewControllers */,
 				5BB880D527FF407A008A45FE /* Storyboards */,
 				5BB880D627FF4082008A45FE /* Resourses */,
+				5BB880D928002A20008A45FE /* Models */,
+				5BB880E228002DEC008A45FE /* Cells */,
 			);
 			path = BoredDogs;
 			sourceTree = "<group>";
@@ -80,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				5BB880C227FF3FCC008A45FE /* MainViewController.swift */,
+				5BB880DE28002C86008A45FE /* ActivitiesTableViewController.swift */,
+				5BB880E028002D9A008A45FE /* BoredDogsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -99,6 +115,24 @@
 				5BB880C727FF3FCD008A45FE /* Assets.xcassets */,
 			);
 			path = Resourses;
+			sourceTree = "<group>";
+		};
+		5BB880D928002A20008A45FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BB880D7280029C8008A45FE /* Activity.swift */,
+				5BB880DA28002A3D008A45FE /* Dog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BB880E228002DEC008A45FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5BB880DC28002BBD008A45FE /* UserActionCell.swift */,
+				5BB880E328002E02008A45FE /* ActivityCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB880E128002D9A008A45FE /* BoredDogsViewController.swift in Sources */,
+				5BB880DF28002C86008A45FE /* ActivitiesTableViewController.swift in Sources */,
 				5BB880C327FF3FCC008A45FE /* MainViewController.swift in Sources */,
 				5BB880BF27FF3FCC008A45FE /* AppDelegate.swift in Sources */,
+				5BB880E428002E02008A45FE /* ActivityCell.swift in Sources */,
+				5BB880DD28002BBD008A45FE /* UserActionCell.swift in Sources */,
+				5BB880D8280029C8008A45FE /* Activity.swift in Sources */,
+				5BB880DB28002A3D008A45FE /* Dog.swift in Sources */,
 				5BB880C127FF3FCC008A45FE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +377,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -364,7 +404,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
