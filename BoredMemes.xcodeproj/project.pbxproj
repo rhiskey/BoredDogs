@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BA33DA82800D7DF004F6844 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA33DA72800D7DF004F6844 /* Meme.swift */; };
 		5BB880BF27FF3FCC008A45FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880BE27FF3FCC008A45FE /* AppDelegate.swift */; };
 		5BB880C127FF3FCC008A45FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880C027FF3FCC008A45FE /* SceneDelegate.swift */; };
 		5BB880C327FF3FCC008A45FE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880C227FF3FCC008A45FE /* MainViewController.swift */; };
@@ -16,13 +17,12 @@
 		5BB880D8280029C8008A45FE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880D7280029C8008A45FE /* Activity.swift */; };
 		5BB880DB28002A3D008A45FE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880DA28002A3D008A45FE /* Dog.swift */; };
 		5BB880DD28002BBD008A45FE /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880DC28002BBD008A45FE /* UserActionCell.swift */; };
-		5BB880DF28002C86008A45FE /* ActivitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880DE28002C86008A45FE /* ActivitiesTableViewController.swift */; };
 		5BB880E128002D9A008A45FE /* BoredDogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880E028002D9A008A45FE /* BoredDogsViewController.swift */; };
-		5BB880E428002E02008A45FE /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880E328002E02008A45FE /* ActivityCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5BB880BB27FF3FCC008A45FE /* BoredDogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoredDogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BA33DA72800D7DF004F6844 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		5BB880BB27FF3FCC008A45FE /* BoredMemes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoredMemes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB880BE27FF3FCC008A45FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB880C027FF3FCC008A45FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5BB880C227FF3FCC008A45FE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -34,9 +34,7 @@
 		5BB880D7280029C8008A45FE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5BB880DA28002A3D008A45FE /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		5BB880DC28002BBD008A45FE /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
-		5BB880DE28002C86008A45FE /* ActivitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesTableViewController.swift; sourceTree = "<group>"; };
 		5BB880E028002D9A008A45FE /* BoredDogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredDogsViewController.swift; sourceTree = "<group>"; };
-		5BB880E328002E02008A45FE /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,7 @@
 		5BB880BC27FF3FCC008A45FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5BB880BB27FF3FCC008A45FE /* BoredDogs.app */,
+				5BB880BB27FF3FCC008A45FE /* BoredMemes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				5BB880C227FF3FCC008A45FE /* MainViewController.swift */,
-				5BB880DE28002C86008A45FE /* ActivitiesTableViewController.swift */,
 				5BB880E028002D9A008A45FE /* BoredDogsViewController.swift */,
 			);
 			path = ViewControllers;
@@ -122,6 +119,7 @@
 			children = (
 				5BB880D7280029C8008A45FE /* Activity.swift */,
 				5BB880DA28002A3D008A45FE /* Dog.swift */,
+				5BA33DA72800D7DF004F6844 /* Meme.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				5BB880DC28002BBD008A45FE /* UserActionCell.swift */,
-				5BB880E328002E02008A45FE /* ActivityCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -138,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5BB880BA27FF3FCC008A45FE /* BoredDogs */ = {
+		5BB880BA27FF3FCC008A45FE /* BoredMemes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BB880CF27FF3FCD008A45FE /* Build configuration list for PBXNativeTarget "BoredDogs" */;
+			buildConfigurationList = 5BB880CF27FF3FCD008A45FE /* Build configuration list for PBXNativeTarget "BoredMemes" */;
 			buildPhases = (
 				5BB880B727FF3FCC008A45FE /* Sources */,
 				5BB880B827FF3FCC008A45FE /* Frameworks */,
@@ -150,9 +147,9 @@
 			);
 			dependencies = (
 			);
-			name = BoredDogs;
+			name = BoredMemes;
 			productName = BoredDogs;
-			productReference = 5BB880BB27FF3FCC008A45FE /* BoredDogs.app */;
+			productReference = 5BB880BB27FF3FCC008A45FE /* BoredMemes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5BB880B627FF3FCC008A45FE /* Build configuration list for PBXProject "BoredDogs" */;
+			buildConfigurationList = 5BB880B627FF3FCC008A45FE /* Build configuration list for PBXProject "BoredMemes" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -183,7 +180,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5BB880BA27FF3FCC008A45FE /* BoredDogs */,
+				5BB880BA27FF3FCC008A45FE /* BoredMemes */,
 			);
 		};
 /* End PBXProject section */
@@ -207,14 +204,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BB880E128002D9A008A45FE /* BoredDogsViewController.swift in Sources */,
-				5BB880DF28002C86008A45FE /* ActivitiesTableViewController.swift in Sources */,
 				5BB880C327FF3FCC008A45FE /* MainViewController.swift in Sources */,
 				5BB880BF27FF3FCC008A45FE /* AppDelegate.swift in Sources */,
-				5BB880E428002E02008A45FE /* ActivityCell.swift in Sources */,
 				5BB880DD28002BBD008A45FE /* UserActionCell.swift in Sources */,
 				5BB880D8280029C8008A45FE /* Activity.swift in Sources */,
 				5BB880DB28002A3D008A45FE /* Dog.swift in Sources */,
 				5BB880C127FF3FCC008A45FE /* SceneDelegate.swift in Sources */,
+				5BA33DA82800D7DF004F6844 /* Meme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.rhiskey.BoredDogs;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.rhiskey.BoredMemes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -400,7 +396,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.rhiskey.BoredDogs;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.rhiskey.BoredMemes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -411,7 +407,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5BB880B627FF3FCC008A45FE /* Build configuration list for PBXProject "BoredDogs" */ = {
+		5BB880B627FF3FCC008A45FE /* Build configuration list for PBXProject "BoredMemes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BB880CD27FF3FCD008A45FE /* Debug */,
@@ -420,7 +416,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BB880CF27FF3FCD008A45FE /* Build configuration list for PBXNativeTarget "BoredDogs" */ = {
+		5BB880CF27FF3FCD008A45FE /* Build configuration list for PBXNativeTarget "BoredMemes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5BB880D027FF3FCD008A45FE /* Debug */,

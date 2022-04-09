@@ -10,10 +10,11 @@ import UIKit
 enum Link: String {
     case dogsApi = "https://dog.ceo/api/breeds/image/random"
     case boredApi = "https://www.boredapi.com/api/activity"
+    case memeApi = "https://api.imgflip.com/get_memes"
 }
 
 enum UserAction: String, CaseIterable {
-    case downloadDogImage = "Get Random Dog"
+    case downloadDogImage = "Get Random Meme"
     case downloadBoredActivity = "Recommend Activity"
 }
 
@@ -45,14 +46,7 @@ class MainViewController: UICollectionViewController {
         switch userAction {
         case .downloadDogImage: performSegue(withIdentifier: "showDog", sender: nil)
         case .downloadBoredActivity: performSegue(withIdentifier: "showActivities", sender: nil)
-        }
-    }
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showActivities" {
-            guard let activitiesVC = segue.destination as? ActivitiesTableViewController else { return }
-            activitiesVC.fetchActitvities()
+
         }
     }
     

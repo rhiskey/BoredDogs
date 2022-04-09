@@ -12,7 +12,7 @@
         <!--Main View Controller-->
         <scene sceneID="Ro1-x9-vXz">
             <objects>
-                <collectionViewController id="913-xJ-g6E" customClass="MainViewController" customModule="BoredDogs" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="913-xJ-g6E" customClass="MainViewController" customModule="BoredMemes" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="P9O-pc-oLe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="40" maxX="0.0" maxY="40"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Zc9-p9-dPD" customClass="UserActionCell" customModule="BoredDogs" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Zc9-p9-dPD" customClass="UserActionCell" customModule="BoredMemes" customModuleProvider="target">
                                 <rect key="frame" x="30" y="40" width="260" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jlT-th-SbM">
@@ -62,7 +62,6 @@
                     <navigationItem key="navigationItem" id="ohl-fm-Rgi"/>
                     <connections>
                         <segue destination="ewO-so-LfC" kind="show" identifier="showDog" id="Oqx-Wk-qAM"/>
-                        <segue destination="YHG-tR-42T" kind="show" identifier="showActivities" id="grQ-cG-fog"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJF-1p-Ryi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -72,89 +71,50 @@
         <!--Bored Dogs View Controller-->
         <scene sceneID="RxQ-8J-vuh">
             <objects>
-                <viewController id="ewO-so-LfC" customClass="BoredDogsViewController" customModule="BoredDogs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ewO-so-LfC" customClass="BoredDogsViewController" customModule="BoredMemes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hJv-sn-4uO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kkg-GL-4Aa">
+                                <rect key="frame" x="16" y="64" width="288" height="288"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kkg-GL-4Aa" secondAttribute="height" multiplier="1:1" id="191-mV-EEW"/>
+                                </constraints>
+                            </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="2vN-NU-DhR">
                                 <rect key="frame" x="150" y="230" width="20" height="20"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23C-RO-hPd">
+                                <rect key="frame" x="16" y="439.5" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6DW-6H-1gN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="23C-RO-hPd" firstAttribute="leading" secondItem="6DW-6H-1gN" secondAttribute="leading" constant="16" id="AWE-Hd-GXC"/>
+                            <constraint firstItem="kkg-GL-4Aa" firstAttribute="leading" secondItem="6DW-6H-1gN" secondAttribute="leading" constant="16" id="FgQ-hQ-Lek"/>
                             <constraint firstItem="2vN-NU-DhR" firstAttribute="centerX" secondItem="hJv-sn-4uO" secondAttribute="centerX" id="P8X-lb-5k9"/>
                             <constraint firstItem="2vN-NU-DhR" firstAttribute="centerY" secondItem="hJv-sn-4uO" secondAttribute="centerY" id="PiS-7w-GDB"/>
+                            <constraint firstItem="6DW-6H-1gN" firstAttribute="trailing" secondItem="kkg-GL-4Aa" secondAttribute="trailing" constant="16" id="VIL-Ef-iJT"/>
+                            <constraint firstItem="kkg-GL-4Aa" firstAttribute="top" secondItem="6DW-6H-1gN" secondAttribute="top" constant="20" id="cIT-3z-NMw"/>
+                            <constraint firstItem="6DW-6H-1gN" firstAttribute="trailing" secondItem="23C-RO-hPd" secondAttribute="trailing" constant="16" id="oFK-bo-alq"/>
+                            <constraint firstItem="6DW-6H-1gN" firstAttribute="bottom" secondItem="23C-RO-hPd" secondAttribute="bottom" constant="20" id="vce-VU-MEL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wpA-Hc-FQF"/>
+                    <connections>
+                        <outlet property="activityLB" destination="23C-RO-hPd" id="4Eg-4d-9xZ"/>
+                        <outlet property="imageView" destination="kkg-GL-4Aa" id="nhA-ma-eWh"/>
+                        <outlet property="loadingIndicator" destination="2vN-NU-DhR" id="bAg-HE-9Lb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYo-r2-QwE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2486" y="-23"/>
-        </scene>
-        <!--Activities Table View Controller-->
-        <scene sceneID="XP1-zt-TBz">
-            <objects>
-                <tableViewController id="YHG-tR-42T" customClass="ActivitiesTableViewController" customModule="BoredDogs" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="yfX-ik-MLF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="J9I-VX-Fz0" customClass="ActivityCell" customModule="BoredDogs" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="J9I-VX-Fz0" id="nGv-fF-a4J">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UaK-AM-Rof">
-                                            <rect key="frame" x="16" y="5" width="69" height="33"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzb-9y-3ve">
-                                            <rect key="frame" x="93" y="5" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apv-wu-Hoy">
-                                            <rect key="frame" x="93" y="22" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oe-IX-aUO">
-                                            <rect key="frame" x="239" y="5" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="dogImage" destination="UaK-AM-Rof" id="wxi-eU-VXJ"/>
-                                    <outlet property="participantsLabel" destination="apv-wu-Hoy" id="jMg-aX-7JJ"/>
-                                    <outlet property="priceLabel" destination="2oe-IX-aUO" id="nrs-lJ-JRP"/>
-                                    <outlet property="typeLabel" destination="Gzb-9y-3ve" id="fpo-v6-jVO"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="YHG-tR-42T" id="4JC-Wg-aV1"/>
-                            <outlet property="delegate" destination="YHG-tR-42T" id="Tl4-9m-B8L"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="6cM-uA-9MP"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q9X-t3-xy6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2482.5" y="928.75"/>
+            <point key="canvasLocation" x="2096" y="70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZRg-7r-Foc">
@@ -162,7 +122,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YUS-z2-6wP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b0z-5c-VLn">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

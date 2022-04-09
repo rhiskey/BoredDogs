@@ -8,22 +8,107 @@
 import UIKit
 
 class BoredDogsViewController: UIViewController {
-
+    @IBOutlet var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var activityLB: UILabel!
+    
+    private var activity: Activity?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        loadingIndicator.startAnimating()
+        loadingIndicator.hidesWhenStopped = true
+//        fetchImage()
+        fetchActivity()
+        fetchMeme()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func fetchImage() {
+        guard let url = URL(string: Link.dogsApi.rawValue) else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, let response = response else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            
+            print(response)
+            
+            guard let image = UIImage(data: data) else { return }
+            
+            DispatchQueue.main.async {
+                self.imageView.image = image
+                self.loadingIndicator.stopAnimating()
+            }
+        }.resume()
     }
-    */
+    
+    private func fetchMeme() {
+        guard let url = URL(string: Link.memeApi.rawValue) else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            
+            do {
+                let meme = try JSONDecoder().decode(Meme.self, from: data)
+                print(meme)
+                guard let firstMeme = meme.data?.memes?.randomElement()?.url else {return}
+                guard let firstMemeUrl =  URL(string: firstMeme) else { return }
+                
+                URLSession.shared.dataTask(with: firstMemeUrl) { data, response, error in
+                    guard let data = data, let response = response else {
+                        print(error?.localizedDescription ?? "No error description")
+                        return
+                    }
+                    
+                    print(response)
+                    
+                    guard let image = UIImage(data: data) else { return }
+                    
+                    DispatchQueue.main.async {
+                        self.imageView.image = image
+                        self.imageView.sizeToFit()
+                        self.loadingIndicator.stopAnimating()
+                    }
+                }.resume()
+            } catch let error {
+                print(error.localizedDescription)
+            }
+            
+        }.resume()
+    }
+    
+    private func fetchActivity() {
+        guard let url = URL(string: Link.boredApi.rawValue) else { return }
+        
+        URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            
+            do {
+                let activity = try JSONDecoder().decode(Activity.self, from: data)
+                DispatchQueue.main.async {
+                    //self.activity = activity
+                    
+                    self.activityLB.text =
+                    """
+                    Activity: \(activity.activity ?? "")
+                    Price: \(activity.price ?? 0)
+                    Participants: \(activity.participants ?? 0)
+                    Accessibility: \(activity.accessibility ?? 0)
+                    """
+                }
+            } catch let error {
+                print(error.localizedDescription)
+            }
+            
+        }.resume()
+        
+    }
 
 }
