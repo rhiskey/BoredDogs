@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="1373" y="70"/>
         </scene>
-        <!--Bored Dogs View Controller-->
+        <!--Bored Memes View Controller-->
         <scene sceneID="RxQ-8J-vuh">
             <objects>
-                <viewController id="ewO-so-LfC" customClass="BoredDogsViewController" customModule="BoredMemes" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ewO-so-LfC" customClass="BoredMemesViewController" customModule="BoredMemes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hJv-sn-4uO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

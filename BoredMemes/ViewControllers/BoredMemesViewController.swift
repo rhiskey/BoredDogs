@@ -1,5 +1,5 @@
 //
-//  BoredDogsViewController.swift
+//  BoredMemesViewController.swift
 //  BoredDogs
 //
 //  Created by Владимир Киселев on 08.04.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BoredDogsViewController: UIViewController {
+class BoredMemesViewController: UIViewController {
     @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var activityLB: UILabel!
@@ -18,29 +18,9 @@ class BoredDogsViewController: UIViewController {
         super.viewDidLoad()
         loadingIndicator.startAnimating()
         loadingIndicator.hidesWhenStopped = true
-//        fetchImage()
-        fetchActivity()
-        fetchMeme()
-    }
-    
-    private func fetchImage() {
-        guard let url = URL(string: Link.dogsApi.rawValue) else { return }
         
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data, let response = response else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-            print(response)
-            
-            guard let image = UIImage(data: data) else { return }
-            
-            DispatchQueue.main.async {
-                self.imageView.image = image
-                self.loadingIndicator.stopAnimating()
-            }
-        }.resume()
+        fetchMeme()
+        fetchActivity()
     }
     
     private func fetchMeme() {
@@ -93,8 +73,6 @@ class BoredDogsViewController: UIViewController {
             do {
                 let activity = try JSONDecoder().decode(Activity.self, from: data)
                 DispatchQueue.main.async {
-                    //self.activity = activity
-                    
                     self.activityLB.text =
                     """
                     Activity: \(activity.activity ?? "")

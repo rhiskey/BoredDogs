@@ -10,9 +10,9 @@ import Foundation
 struct Activity: Decodable {
     let activity: String?
     let type: String?
-    let participants: Int?
-    let price: Int?
+    let participants: Double?
+    let price: Double?
     let link: String?
     let key: String?
-    let accessibility: Int?
+    let accessibility: Double?
 }

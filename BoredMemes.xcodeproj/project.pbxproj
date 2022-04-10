@@ -17,7 +17,7 @@
 		5BB880D8280029C8008A45FE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880D7280029C8008A45FE /* Activity.swift */; };
 		5BB880DB28002A3D008A45FE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880DA28002A3D008A45FE /* Dog.swift */; };
 		5BB880DD28002BBD008A45FE /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880DC28002BBD008A45FE /* UserActionCell.swift */; };
-		5BB880E128002D9A008A45FE /* BoredDogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880E028002D9A008A45FE /* BoredDogsViewController.swift */; };
+		5BB880E128002D9A008A45FE /* BoredMemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880E028002D9A008A45FE /* BoredMemesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 		5BB880D7280029C8008A45FE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		5BB880DA28002A3D008A45FE /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		5BB880DC28002BBD008A45FE /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
-		5BB880E028002D9A008A45FE /* BoredDogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredDogsViewController.swift; sourceTree = "<group>"; };
+		5BB880E028002D9A008A45FE /* BoredMemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredMemesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				5BB880D427FF405B008A45FE /* README.md */,
-				5BB880BD27FF3FCC008A45FE /* BoredDogs */,
+				5BB880BD27FF3FCC008A45FE /* BoredMemes */,
 				5BB880BC27FF3FCC008A45FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +65,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5BB880BD27FF3FCC008A45FE /* BoredDogs */ = {
+		5BB880BD27FF3FCC008A45FE /* BoredMemes */ = {
 			isa = PBXGroup;
 			children = (
 				5BB880D227FF4042008A45FE /* App */,
@@ -75,7 +75,7 @@
 				5BB880D928002A20008A45FE /* Models */,
 				5BB880E228002DEC008A45FE /* Cells */,
 			);
-			path = BoredDogs;
+			path = BoredMemes;
 			sourceTree = "<group>";
 		};
 		5BB880D227FF4042008A45FE /* App */ = {
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				5BB880C227FF3FCC008A45FE /* MainViewController.swift */,
-				5BB880E028002D9A008A45FE /* BoredDogsViewController.swift */,
+				5BB880E028002D9A008A45FE /* BoredMemesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BB880E128002D9A008A45FE /* BoredDogsViewController.swift in Sources */,
+				5BB880E128002D9A008A45FE /* BoredMemesViewController.swift in Sources */,
 				5BB880C327FF3FCC008A45FE /* MainViewController.swift in Sources */,
 				5BB880BF27FF3FCC008A45FE /* AppDelegate.swift in Sources */,
 				5BB880DD28002BBD008A45FE /* UserActionCell.swift in Sources */,
@@ -358,7 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BoredDogs/App/Info.plist;
+				INFOPLIST_FILE = BoredMemes/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -385,7 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BoredDogs/App/Info.plist;
+				INFOPLIST_FILE = BoredMemes/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
