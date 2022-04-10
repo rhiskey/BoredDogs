@@ -15,28 +15,29 @@ class BoredMemesViewController: UIViewController {
     var urlActivity: String?
     var urlMeme: String?
     
-    private var activity: Activity?
-    private var image: UIImage?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadingIndicator.startAnimating()
         loadingIndicator.hidesWhenStopped = true
         
-        NetworkManager.shared.fetchActivity(from: urlActivity) { activity in
-            self.activity = activity
+        NetworkManager.shared.fetchActivity(from: urlActivity) { result in
             
-            self.activityLB.text =
-            """
-            Activity: \(activity.activity ?? "")
-            Price: \(activity.price ?? 0)
-            Participants: \(activity.participants ?? 0)
-            Accessibility: \(activity.accessibility ?? 0)
-            """
+            switch result {
+            case .success(let activity):
+                self.activityLB.text =
+                """
+                Activity: \(activity.activity ?? "")
+                Price: \(activity.price ?? 0)
+                Participants: \(activity.participants ?? 0)
+                Accessibility: \(activity.accessibility ?? 0)
+                """
+            case .failure(let error):
+                print(error)
+            }
+            
         }
         
         NetworkManager.shared.fetchMeme(from: urlMeme) { image in
-            self.image = image
             self.imageView.image = image
             self.imageView.sizeToFit()
             self.loadingIndicator.stopAnimating()

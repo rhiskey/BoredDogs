@@ -8,6 +8,12 @@
 import Foundation
 import UIKit
 
+enum NetworkError: Error {
+    case invalidURL
+    case noData
+    case decodingError
+}
+
 class NetworkManager {
     
     static let shared = NetworkManager()
@@ -47,11 +53,15 @@ class NetworkManager {
         }.resume()
     }
     
-    func fetchActivity(from url: String?, with completion: @escaping(Activity) -> Void) {
-        guard let url = URL(string: url ?? "") else { return }
+    func fetchActivity(from url: String?, with completion: @escaping(Result<Activity, NetworkError>) -> Void) {
+        guard let url = URL(string: url ?? "") else {
+            completion(.failure(.invalidURL))
+            return
+        }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
+                completion(.failure(.noData))
                 print(error?.localizedDescription ?? "No error description")
                 return
             }
@@ -59,10 +69,10 @@ class NetworkManager {
             do {
                 let activity = try JSONDecoder().decode(Activity.self, from: data)
                 DispatchQueue.main.async {
-                    completion(activity)
+                    completion(.success(activity))
                 }
-            } catch let error {
-                print(error.localizedDescription)
+            } catch {
+                completion(.failure(.decodingError))
             }
         }.resume()
         
