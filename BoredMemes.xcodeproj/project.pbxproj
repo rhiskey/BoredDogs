@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5BA33DA82800D7DF004F6844 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA33DA72800D7DF004F6844 /* Meme.swift */; };
+		5BA33DAD28033689004F6844 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA33DAC28033689004F6844 /* NetworkManager.swift */; };
 		5BB880BF27FF3FCC008A45FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880BE27FF3FCC008A45FE /* AppDelegate.swift */; };
 		5BB880C127FF3FCC008A45FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880C027FF3FCC008A45FE /* SceneDelegate.swift */; };
 		5BB880C327FF3FCC008A45FE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880C227FF3FCC008A45FE /* MainViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		5BA33DA72800D7DF004F6844 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		5BA33DAC28033689004F6844 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5BB880BB27FF3FCC008A45FE /* BoredMemes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoredMemes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB880BE27FF3FCC008A45FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB880C027FF3FCC008A45FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BA33DAB28033677004F6844 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5BA33DAC28033689004F6844 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		5BB880B227FF3FCC008A45FE = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		5BB880BD27FF3FCC008A45FE /* BoredMemes */ = {
 			isa = PBXGroup;
 			children = (
+				5BA33DAB28033677004F6844 /* Networking */,
 				5BB880D227FF4042008A45FE /* App */,
 				5BB880D327FF404A008A45FE /* ViewControllers */,
 				5BB880D527FF407A008A45FE /* Storyboards */,
@@ -203,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA33DAD28033689004F6844 /* NetworkManager.swift in Sources */,
 				5BB880E128002D9A008A45FE /* BoredMemesViewController.swift in Sources */,
 				5BB880C327FF3FCC008A45FE /* MainViewController.swift in Sources */,
 				5BB880BF27FF3FCC008A45FE /* AppDelegate.swift in Sources */,

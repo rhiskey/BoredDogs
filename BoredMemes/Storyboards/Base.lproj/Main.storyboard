@@ -61,12 +61,12 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="ohl-fm-Rgi"/>
                     <connections>
-                        <segue destination="ewO-so-LfC" kind="show" identifier="showDog" id="Oqx-Wk-qAM"/>
+                        <segue destination="ewO-so-LfC" kind="show" identifier="showMeme" id="Oqx-Wk-qAM"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJF-1p-Ryi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1373" y="70"/>
+            <point key="canvasLocation" x="1157" y="70"/>
         </scene>
         <!--Bored Memes View Controller-->
         <scene sceneID="RxQ-8J-vuh">
@@ -132,7 +132,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oed-sN-Vu1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737" y="71"/>
+            <point key="canvasLocation" x="444" y="70"/>
         </scene>
     </scenes>
     <resources>

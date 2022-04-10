@@ -38,7 +38,16 @@ class MainViewController: UICollectionViewController {
         let userAction = userActions[indexPath.item]
 
         switch userAction {
-        case .downloadDogImage: performSegue(withIdentifier: "showDog", sender: nil)
+        case .downloadDogImage: performSegue(withIdentifier: "showMeme", sender: nil)
+        }
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMeme" {
+            guard let memesVC = segue.destination as? BoredMemesViewController else { return }
+            memesVC.urlActivity = Link.boredApi.rawValue
+            memesVC.urlMeme = Link.memeApi.rawValue
         }
     }
     
