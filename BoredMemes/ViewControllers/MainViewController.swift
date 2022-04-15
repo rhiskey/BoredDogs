@@ -8,13 +8,11 @@
 import UIKit
 
 enum Link: String {
-    case boredApi = "https://www.boredapi.com/api/activity"
-    case memeApi = "https://api.imgflip.com/get_memes"
     case breweryApi = "https://api.openbrewerydb.org/breweries"
 }
 
 enum UserAction: String, CaseIterable {
-    case showMeme = "Get Random Meme"
+    case showBreweries = "Get Brewery list"
 }
 
 
@@ -39,23 +37,15 @@ class MainViewController: UICollectionViewController {
         let userAction = userActions[indexPath.item]
 
         switch userAction {
-        case .showMeme: performSegue(withIdentifier: "showMeme", sender: nil)
+        case .showBreweries: performSegue(withIdentifier: "showBrewery", sender: nil)
         }
     }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-//        if segue.identifier != "showMeme" {
-//            guard let memesVC = segue.destination  as?  BoredMemesViewController  else { return }
-//            switch segue.identifier {
-//            case "showMeme": memesVC.alamofireGetActivity()
-//            default: break
-//            }
-//        }
-        if segue.identifier == "showMeme" {
-            guard let memesVC = segue.destination as? BoredMemesViewController else { return }
-            memesVC.alamofireGetBrewery()
+        if segue.identifier == "showBrewery" {
+            guard let breweryVC = segue.destination as? BreweriesViewController else { return }
+            breweryVC.alamofireGetBrewery()
         }
     }
     
@@ -89,11 +79,7 @@ class MainViewController: UICollectionViewController {
     }
 }
 
-// MARK: - Networking
-extension MainViewController {
-    
-}
-
+// MARK: - CollectionViewDelegate
 extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         CGSize(width: UIScreen.main.bounds.width - 48, height: 100)

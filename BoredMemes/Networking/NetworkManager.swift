@@ -20,23 +20,7 @@ class NetworkManager {
     static let shared = NetworkManager()
     
     private init() {}
-    
-    func fetchImage(from url: String?, completion: @escaping(Result<Data, NetworkError>) -> Void) {
-        guard let url = URL(string: url ?? "") else {
-            completion(.failure(.invalidURL))
-            return
-        }
-        DispatchQueue.global().async {
-            guard let imageData = try? Data(from: url as! Decoder) else {
-                completion(.failure(.noData))
-                return
-            }
-            DispatchQueue.main.async {
-                completion(.success(imageData))
-            }
-        }
-    }
-    
+
     func fetchBreweryWithAlamofire(_ url: String, completion: @escaping(Result<[Brewery], NetworkError>) -> Void) {
         AF.request(url)
             .validate()

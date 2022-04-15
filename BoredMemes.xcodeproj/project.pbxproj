@@ -17,7 +17,7 @@
 		5BB880C827FF3FCD008A45FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB880C727FF3FCD008A45FE /* Assets.xcassets */; };
 		5BB880CB27FF3FCD008A45FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB880C927FF3FCD008A45FE /* LaunchScreen.storyboard */; };
 		5BB880DD28002BBD008A45FE /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880DC28002BBD008A45FE /* UserActionCell.swift */; };
-		5BB880E128002D9A008A45FE /* BoredMemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880E028002D9A008A45FE /* BoredMemesViewController.swift */; };
+		5BB880E128002D9A008A45FE /* BreweriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880E028002D9A008A45FE /* BreweriesViewController.swift */; };
 		5C6A452DDD8F21485B24F581 /* Pods_BoredMemes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA3F85A8487AC372E978CDB /* Pods_BoredMemes.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +37,7 @@
 		5BB880CC27FF3FCD008A45FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BB880D427FF405B008A45FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5BB880DC28002BBD008A45FE /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
-		5BB880E028002D9A008A45FE /* BoredMemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredMemesViewController.swift; sourceTree = "<group>"; };
+		5BB880E028002D9A008A45FE /* BreweriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweriesViewController.swift; sourceTree = "<group>"; };
 		CEA3F85A8487AC372E978CDB /* Pods_BoredMemes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoredMemes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				5BB880C227FF3FCC008A45FE /* MainViewController.swift */,
-				5BB880E028002D9A008A45FE /* BoredMemesViewController.swift */,
+				5BB880E028002D9A008A45FE /* BreweriesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -280,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BA33DAD28033689004F6844 /* NetworkManager.swift in Sources */,
-				5BB880E128002D9A008A45FE /* BoredMemesViewController.swift in Sources */,
+				5BB880E128002D9A008A45FE /* BreweriesViewController.swift in Sources */,
 				5BB880C327FF3FCC008A45FE /* MainViewController.swift in Sources */,
 				5BB880BF27FF3FCC008A45FE /* AppDelegate.swift in Sources */,
 				5B5304842809838400854202 /* Brewery.swift in Sources */,
