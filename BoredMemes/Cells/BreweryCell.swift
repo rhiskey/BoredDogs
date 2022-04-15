@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 class BreweryCell: UITableViewCell {
-
     @IBOutlet var name: UILabel!
     @IBOutlet var address: UILabel!
     @IBOutlet var city: UILabel!
