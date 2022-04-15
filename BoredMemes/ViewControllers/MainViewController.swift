@@ -10,10 +10,11 @@ import UIKit
 enum Link: String {
     case boredApi = "https://www.boredapi.com/api/activity"
     case memeApi = "https://api.imgflip.com/get_memes"
+    case breweryApi = "https://api.openbrewerydb.org/breweries"
 }
 
 enum UserAction: String, CaseIterable {
-    case downloadDogImage = "Get Random Meme"
+    case showMeme = "Get Random Meme"
 }
 
 
@@ -38,16 +39,23 @@ class MainViewController: UICollectionViewController {
         let userAction = userActions[indexPath.item]
 
         switch userAction {
-        case .downloadDogImage: performSegue(withIdentifier: "showMeme", sender: nil)
+        case .showMeme: performSegue(withIdentifier: "showMeme", sender: nil)
         }
     }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+//        if segue.identifier != "showMeme" {
+//            guard let memesVC = segue.destination  as?  BoredMemesViewController  else { return }
+//            switch segue.identifier {
+//            case "showMeme": memesVC.alamofireGetActivity()
+//            default: break
+//            }
+//        }
         if segue.identifier == "showMeme" {
             guard let memesVC = segue.destination as? BoredMemesViewController else { return }
-            memesVC.urlActivity = Link.boredApi.rawValue
-            memesVC.urlMeme = Link.memeApi.rawValue
+            memesVC.alamofireGetBrewery()
         }
     }
     
@@ -84,26 +92,6 @@ class MainViewController: UICollectionViewController {
 // MARK: - Networking
 extension MainViewController {
     
-    private func exampleFourButtonPressed() {
-        guard let url = URL(string: Link.boredApi.rawValue) else { return }
-        
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-            do {
-                let websiteDescription = try JSONDecoder().decode(Activity.self, from: data)
-                print(websiteDescription)
-                self.successAlert()
-            } catch let error {
-                self.failedAlert()
-                print(error)
-            }
-            
-        }.resume()
-    }
 }
 
 extension MainViewController: UICollectionViewDelegateFlowLayout {

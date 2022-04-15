@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5BA33DA82800D7DF004F6844 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA33DA72800D7DF004F6844 /* Meme.swift */; };
+		5B5304842809838400854202 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5304832809838400854202 /* Brewery.swift */; };
+		5B530486280984F700854202 /* BreweryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B530485280984F700854202 /* BreweryCell.swift */; };
 		5BA33DAD28033689004F6844 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA33DAC28033689004F6844 /* NetworkManager.swift */; };
 		5BB880BF27FF3FCC008A45FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880BE27FF3FCC008A45FE /* AppDelegate.swift */; };
 		5BB880C127FF3FCC008A45FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880C027FF3FCC008A45FE /* SceneDelegate.swift */; };
@@ -15,14 +16,16 @@
 		5BB880C627FF3FCC008A45FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB880C427FF3FCC008A45FE /* Main.storyboard */; };
 		5BB880C827FF3FCD008A45FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB880C727FF3FCD008A45FE /* Assets.xcassets */; };
 		5BB880CB27FF3FCD008A45FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB880C927FF3FCD008A45FE /* LaunchScreen.storyboard */; };
-		5BB880D8280029C8008A45FE /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880D7280029C8008A45FE /* Activity.swift */; };
-		5BB880DB28002A3D008A45FE /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880DA28002A3D008A45FE /* Dog.swift */; };
 		5BB880DD28002BBD008A45FE /* UserActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880DC28002BBD008A45FE /* UserActionCell.swift */; };
 		5BB880E128002D9A008A45FE /* BoredMemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB880E028002D9A008A45FE /* BoredMemesViewController.swift */; };
+		5C6A452DDD8F21485B24F581 /* Pods_BoredMemes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA3F85A8487AC372E978CDB /* Pods_BoredMemes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5BA33DA72800D7DF004F6844 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		107F54D593AB8C216B4328BD /* Pods-BoredMemes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredMemes.release.xcconfig"; path = "Target Support Files/Pods-BoredMemes/Pods-BoredMemes.release.xcconfig"; sourceTree = "<group>"; };
+		20F17525AD1A9B362CCD4D22 /* Pods-BoredMemes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoredMemes.debug.xcconfig"; path = "Target Support Files/Pods-BoredMemes/Pods-BoredMemes.debug.xcconfig"; sourceTree = "<group>"; };
+		5B5304832809838400854202 /* Brewery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
+		5B530485280984F700854202 /* BreweryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryCell.swift; sourceTree = "<group>"; };
 		5BA33DAC28033689004F6844 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5BB880BB27FF3FCC008A45FE /* BoredMemes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoredMemes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB880BE27FF3FCC008A45FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,10 +36,9 @@
 		5BB880CA27FF3FCD008A45FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BB880CC27FF3FCD008A45FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BB880D427FF405B008A45FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5BB880D7280029C8008A45FE /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		5BB880DA28002A3D008A45FE /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		5BB880DC28002BBD008A45FE /* UserActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserActionCell.swift; sourceTree = "<group>"; };
 		5BB880E028002D9A008A45FE /* BoredMemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredMemesViewController.swift; sourceTree = "<group>"; };
+		CEA3F85A8487AC372E978CDB /* Pods_BoredMemes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoredMemes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,12 +46,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6A452DDD8F21485B24F581 /* Pods_BoredMemes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16B6BC37979C28E058115CA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20F17525AD1A9B362CCD4D22 /* Pods-BoredMemes.debug.xcconfig */,
+				107F54D593AB8C216B4328BD /* Pods-BoredMemes.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5BA33DAB28033677004F6844 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +76,8 @@
 				5BB880D427FF405B008A45FE /* README.md */,
 				5BB880BD27FF3FCC008A45FE /* BoredMemes */,
 				5BB880BC27FF3FCC008A45FE /* Products */,
+				16B6BC37979C28E058115CA3 /* Pods */,
+				B6F813E5CD02E27B6179A6F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,9 +142,7 @@
 		5BB880D928002A20008A45FE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5BB880D7280029C8008A45FE /* Activity.swift */,
-				5BB880DA28002A3D008A45FE /* Dog.swift */,
-				5BA33DA72800D7DF004F6844 /* Meme.swift */,
+				5B5304832809838400854202 /* Brewery.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,8 +151,17 @@
 			isa = PBXGroup;
 			children = (
 				5BB880DC28002BBD008A45FE /* UserActionCell.swift */,
+				5B530485280984F700854202 /* BreweryCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		B6F813E5CD02E27B6179A6F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEA3F85A8487AC372E978CDB /* Pods_BoredMemes.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BB880CF27FF3FCD008A45FE /* Build configuration list for PBXNativeTarget "BoredMemes" */;
 			buildPhases = (
+				FA7FFB57022712DA7DCFDA06 /* [CP] Check Pods Manifest.lock */,
 				5BB880B727FF3FCC008A45FE /* Sources */,
 				5BB880B827FF3FCC008A45FE /* Frameworks */,
 				5BB880B927FF3FCC008A45FE /* Resources */,
+				62D2F411C5CF6127A5B930B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,6 +232,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62D2F411C5CF6127A5B930B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoredMemes/Pods-BoredMemes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BoredMemes/Pods-BoredMemes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BoredMemes/Pods-BoredMemes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7FFB57022712DA7DCFDA06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoredMemes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BB880B727FF3FCC008A45FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -218,11 +283,10 @@
 				5BB880E128002D9A008A45FE /* BoredMemesViewController.swift in Sources */,
 				5BB880C327FF3FCC008A45FE /* MainViewController.swift in Sources */,
 				5BB880BF27FF3FCC008A45FE /* AppDelegate.swift in Sources */,
+				5B5304842809838400854202 /* Brewery.swift in Sources */,
 				5BB880DD28002BBD008A45FE /* UserActionCell.swift in Sources */,
-				5BB880D8280029C8008A45FE /* Activity.swift in Sources */,
-				5BB880DB28002A3D008A45FE /* Dog.swift in Sources */,
+				5B530486280984F700854202 /* BreweryCell.swift in Sources */,
 				5BB880C127FF3FCC008A45FE /* SceneDelegate.swift in Sources */,
-				5BA33DA82800D7DF004F6844 /* Meme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +428,7 @@
 		};
 		5BB880D027FF3FCD008A45FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20F17525AD1A9B362CCD4D22 /* Pods-BoredMemes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -391,6 +456,7 @@
 		};
 		5BB880D127FF3FCD008A45FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107F54D593AB8C216B4328BD /* Pods-BoredMemes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
