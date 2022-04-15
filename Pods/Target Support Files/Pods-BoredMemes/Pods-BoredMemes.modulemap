@@ -1,0 +1,6 @@
+framework module Pods_BoredMemes {
+  umbrella header "Pods-BoredMemes-umbrella.h"
+
+  export *
+  module * { export * }
+}
