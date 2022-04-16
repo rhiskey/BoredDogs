@@ -27,22 +27,22 @@ struct Brewery: Codable{
     
 
     init(data: [String: Any]) {
-        self.id = data["id"] as? String
-        self.name = data["name"] as? String
-        self.breweryType = data["brewery_type"] as? String
-        self.street = data["street"] as? String
-        self.address2 = data["address_2"] as? String
-        self.address3 = data["address_3"] as? String
-        self.city = data["city"] as? String
-        self.state = data["state"] as? String
-        self.countyProvince = data["county_province"] as? String
-        self.postalCode = data["postal_code"] as? String
-        self.country = data["country"] as? String
-        self.longitude = data["longitude"] as? String
-        self.latitude = data["latitude"] as? String
-        self.websiteUrl = data["website_url"] as? String
-        self.updatedAt = data["updated_at"] as? String
-        self.createdAt = data["created_at"] as? String
+        id = data["id"] as? String
+        name = data["name"] as? String
+        breweryType = data["brewery_type"] as? String
+        street = data["street"] as? String
+        address2 = data["address_2"] as? String
+        address3 = data["address_3"] as? String
+        city = data["city"] as? String
+        state = data["state"] as? String
+        countyProvince = data["county_province"] as? String
+        postalCode = data["postal_code"] as? String
+        country = data["country"] as? String
+        longitude = data["longitude"] as? String
+        latitude = data["latitude"] as? String
+        websiteUrl = data["website_url"] as? String
+        updatedAt = data["updated_at"] as? String
+        createdAt = data["created_at"] as? String
         
     }
     

@@ -17,7 +17,7 @@ enum UserAction: String, CaseIterable {
 
 
 class MainViewController: UICollectionViewController {
-    let userActions = UserAction.allCases
+    private let userActions = UserAction.allCases
 
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
